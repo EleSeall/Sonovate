@@ -1,0 +1,15 @@
+
+
+1) Try / Catch then throwing a generic exception - why? Generic exceptions changed to more specific ones.
+2) Tightly coupled repositories and csvwriter. 
+3) Everything is internal, which means unit tests would need to be in the same assembly, normally I would make a separate project for unit tests. May need discussion as to whether acceptable to make these classes public. 
+4) Very exception happy. Would probably change this to a log with meaningful error messages to identify problems.
+5) Hardcoded strings for filenames or filename partials, may want to be added to config so changeable at runtime.
+6) Simplify supplier bacs export code
+7) Simplify payments export code
+8) Could put a wrapper around DocumentStore incase this dependency changes
+9) string.IsNullOrEmpty(transactionGroup.First().InvoiceRef) First() will throw exception if no elements, replace with FirstOrDefault() or perform null check first.
+10) BuildSupplierPayments has a lot of inline checks, for code readability I would split these out.
+11) Some comments would be nice.
+12) BuildSupplierPayments and BuildAgencyPayments followed by ExportZip is where I would focus unit test coverage. See how it copes with shoddy data and put in appropriate guard code to make it more resilient.
+13) Could write another implementation of IExportFileWriter for unit testing which doesn't have the csvwriter dependency 
