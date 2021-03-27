@@ -2,7 +2,7 @@
 
 namespace Sonovate.CodeTest
 {
-    internal interface ICandidateRepository
+    public interface ICandidateRepository
     {
         Candidate GetById(string supplierId);
     }

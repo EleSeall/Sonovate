@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Sonovate.CodeTest
 {
-    internal interface IInvoiceTransactionRepository
+    public interface IInvoiceTransactionRepository
     {
         List<InvoiceTransaction> GetBetweenDates(DateTime startDate, DateTime endDate);
     }

@@ -1,6 +1,6 @@
 ﻿namespace Sonovate.CodeTest.Domain
 {
-    internal class SupplierBacs
+    public class SupplierBacs
     {
         public string AccountName { get; set; }
         public string AccountNumber { get; set; }

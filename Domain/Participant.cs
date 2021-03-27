@@ -1,6 +1,6 @@
 ﻿namespace Sonovate.CodeTest.Domain
 {
-    internal enum Participant
+    public enum Participant
     {
         Candidate,
         Agency

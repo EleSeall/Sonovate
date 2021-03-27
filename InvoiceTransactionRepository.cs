@@ -5,7 +5,7 @@ using Sonovate.CodeTest.Domain;
 
 namespace Sonovate.CodeTest
 {
-    internal class InvoiceTransactionRepository : IInvoiceTransactionRepository
+    public class InvoiceTransactionRepository : IInvoiceTransactionRepository
     {
         public List<InvoiceTransaction> GetBetweenDates(DateTime startDate, DateTime endDate)
         {

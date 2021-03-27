@@ -5,7 +5,7 @@ using Sonovate.CodeTest.Domain;
 
 namespace Sonovate.CodeTest
 {
-    internal class PaymentsRepository : IPaymentsRepository
+    public class PaymentsRepository : IPaymentsRepository
     {
         public IList<Payment> GetBetweenDates(DateTime start, DateTime end)
         {

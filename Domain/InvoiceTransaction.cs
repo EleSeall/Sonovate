@@ -2,7 +2,7 @@
 
 namespace Sonovate.CodeTest.Domain
 {
-    internal class InvoiceTransaction
+    public class InvoiceTransaction
     {
         public DateTime? InvoiceDate { get; set; }
         public string InvoiceId { get; set; }
