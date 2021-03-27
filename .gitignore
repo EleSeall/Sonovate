@@ -1,4 +1,5 @@
-﻿.vs
-obj
-bin
-Sonovate.CodeTest.sln.DotSettings.user
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Sonovate.CodeTest.UnitTests/bin/Debug/netcoreapp3.1
